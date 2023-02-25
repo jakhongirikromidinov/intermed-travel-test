@@ -18,6 +18,13 @@ const StyledPhotoCard = styled.div`
 	}
 	@media screen and (max-width: 1000px) {
 		max-width: unset;
+
+		label {
+			font-size: clamp(1.4rem, 2vw, 2rem);
+			padding: 0.7em 1.7em;
+			top: 1.2rem;
+			left: 1.2rem;
+		}
 	}
 `;
 

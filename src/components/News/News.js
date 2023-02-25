@@ -1,8 +1,6 @@
 import { Container } from "../Common/Common.styled";
 import { Title } from "../Common/Common";
 
-import NewsCard from "./UI/Card/NewsCard";
-
 import StyledNews, {
 	Content,
 	HeaderWrapper,
@@ -16,7 +14,7 @@ import data from "../../context/db";
 
 const News = () => {
 	const {
-		news: { title, newsCards },
+		news: { title },
 	} = useContext(data);
 
 	return (

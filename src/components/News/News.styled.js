@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const StyledNews = styled.section`
 	padding-bottom: 8rem;
+	@media screen and (max-width: 1000px) {
+		padding-bottom: 6.4rem;
+	}
 `;
 
 export const Content = styled.div``;

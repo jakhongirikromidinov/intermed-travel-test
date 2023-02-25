@@ -11,6 +11,11 @@ const StyledFooter = styled.div`
 		transform: translateX(-50%);
 		top: 25px;
 	}
+	@media screen and (max-width: 1000px) {
+		::before {
+			top: 50px;
+		}
+	}
 `;
 
 export const Content = styled.div`
@@ -21,6 +26,10 @@ export const Content = styled.div`
 	@media screen and (max-width: 1000px) {
 		flex-direction: column;
 		align-items: center;
+	}
+	@media screen and (max-width: 1600px) {
+		gap: 0;
+		justify-content: space-between;
 	}
 `;
 export const FooterInfo = styled.div`
@@ -68,6 +77,12 @@ export const FooterMain = styled.div`
 	}
 	@media screen and (max-width: 1000px) {
 		display: none;
+	}
+	@media screen and (max-width: 1600px) {
+		gap: 5rem;
+	}
+	@media screen and (max-width: 1100px) {
+		gap: 3rem;
 	}
 `;
 

@@ -17,7 +17,7 @@ function App() {
 			<Tours />
 			<Hotels />
 			<Offers />
-			{/* <Choice /> */}
+			<Choice />
 			<Reviews />
 			<News />
 		</Layout>

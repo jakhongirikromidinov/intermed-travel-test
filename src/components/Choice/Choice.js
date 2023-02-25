@@ -53,6 +53,7 @@ const Choice = () => {
 				</Content>
 
 				<MobileContent>
+					<Title value={title} center />
 					<UpperLine>
 						{photoCards_mobile_1.map((card, index) => {
 							return (
