@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./GlobalStyles";
+import FontStyles from "./FontStyles";
+import Hotels from "./components/Hotels/Hotels";
+import Choice from "./components/Choice/Choice";
+import Tours from "./components/Tours/Tours";
+import News from "./components/News/News";
+import Reviews from "./components/Reviews/Review";
+import Offers from "./components/Offers/Offers";
 
+import { Layout } from "./components/Common/Common";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Layout>
+			<FontStyles />
+			<GlobalStyle />
+
+			<Tours />
+			<Hotels />
+			<Offers />
+			{/* <Choice /> */}
+			<Reviews />
+			<News />
+		</Layout>
+	);
 }
 
 export default App;
